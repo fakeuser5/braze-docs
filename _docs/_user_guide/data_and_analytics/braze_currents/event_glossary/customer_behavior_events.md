@@ -52,7 +52,10 @@ This event occurs when a specific custom event is triggered. Use this to track w
   "os_version": (string) os version of device used for the action,
   "device_model": (string) hardware model of the device,
   "device_id": (string) id of the device on which the event occurred,
-  "properties": (string) JSON encoded string of the custom properties for this event
+  "properties": (string) JSON encoded string of the custom properties for this event,
+  "ad_id": (string) advertising identifier,
+  "ad_id_type": (string) One of 'ios_idfa', 'google_ad_id', 'windows_ad_id', OR 'roku_ad_id',
+  "ad_tracking_enabled": (boolean) whether advertising tracking is enabled for the device
 }
 ```
 
@@ -86,7 +89,10 @@ Purchases are special custom events and come with a JSON encoded string of custo
   "platform": (string) platform of the device (iOS, Android, web, etc.),
   "os_version": (string) os version of device used for the action,
   "device_model": (string) hardware model of the device,
-  "device_id": (string) id of the device on which the event occurred
+  "device_id": (string) id of the device on which the event occurred,
+  "ad_id": (string) advertising identifier,
+  "ad_id_type": (string) One of 'ios_idfa', 'google_ad_id', 'windows_ad_id', OR 'roku_ad_id',
+  "ad_tracking_enabled": (boolean) whether advertising tracking is enabled for the device
 }
 ```
 {% endapi %}
@@ -214,7 +220,10 @@ This event is triggered when a user visits a specified location. Use this to tra
   "platform": (string) platform of the device (iOS, Android, web, etc.),
   "os_version": (string) os version of device used for the action,
   "device_model": (string) hardware model of the device,
-  "device_id": (string) id of the device on which the event occurred
+  "device_id": (string) id of the device on which the event occurred,
+  "ad_id": (string) advertising identifier,
+  "ad_id_type": (string) One of 'ios_idfa', 'google_ad_id', 'windows_ad_id', OR 'roku_ad_id',
+  "ad_tracking_enabled": (boolean) whether advertising tracking is enabled for the device
 }
 ```
 {% endapi %}
